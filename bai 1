@@ -1,0 +1,19 @@
+#include <stdio.h>
+void printMultiplesOfSeven(int start, int end)
+{
+    for (int i = start; i <= end; ++i)
+    {
+        if (i >= 10 && i <= 99 && i % 7 == 0)
+        {
+            printf("%d ",i);
+        }
+    }
+}
+int main(void)
+{
+    int start = 10;
+    int end = 99;
+    printf("cac so nguyen 2 chua hai so la boi cua 7:\n");
+    printMultiplesOfSeven(start,end);
+    return 0;
+}
